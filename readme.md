@@ -2,4 +2,4 @@
 
 [History of the Website](http://historyWebsite.eastus.azurecontainer.io)
  
-Created by Neha Kazi
+Created by Neha Kazi and Swathi Venkatesh kumar
