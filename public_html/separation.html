@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Separation of Concerns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+<!-- Sidebar/menu -->
+<div class="-top">
+    <div class="bar theme top left-align large">
+        <a href="/internet-history/public_html/index.html" class="bar-item button theme-l1">Home</a>
+    </div>
+</div>
+<nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="container" style="margin-top:0px" id="showcase">
+        <h1 class="text-teal"><b>Separation of Concerns </b></h1>
+    </div>
+    <div class="bar-block" style="float:left"  >
+        <img width="100%" src="../images/separation1.png">
+        <p>Separation-Addition</p>
+        <img width="100%" src="../images/separation2.png">
+        <p>Separation-Divison</p>
+    </div>
+</nav>
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+
+    <!-- Services -->
+    <div class="container" id="services" style="margin-top:60px">
+        <p class="d-inline">
+        <ul class= "text-white">
+            <li>Seperation of Concerns
+                <ul>
+                    <li>Seperation of Concerns is the idea of avoiding combining different concerns or pieces of code</li>
+                    <li>When code is seperated, there is a less probability of breaking unmodified code</li>
+                    <li>Another way of thinking about this is that all of the functions are simple, one-liners</li>
+                    <li>And different functions are stored in seperate files</li>
+                    <li>This techinique makes it easier to maintain code and add features</li>
+
+                    <li>In the calculation program, you can see that the four types of operations are located in different python scripts</li>
+                    <li>Even the base calculation, the abstract class, is seperated</li>
+                    <li>Calculator is the API for calculation and every function dealing with the <q>history</q> array is located there</li>
+                    <li>There is no duplicated code, meaning there are no repeating loops</li>
+                    <li>Unduplicated code is a good thing and is caused by seperating code and making the code as abstract as possible</li>
+                </ul>
+            </li>
+
+        </ul>
+        </p>
+    </div>
+
+    <!-- Header -->
+</div>
+</body>
+</html>

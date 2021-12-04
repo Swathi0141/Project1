@@ -1,160 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-
-
-    <!--calling the js file used to make the background image stretch all the way across screen-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <style>
-        * {box-sizing: border-box;}
-
-        body {
-            margin: 0;
-            font-family: Aria, Helvetica, sans-serif;
-        }
-
-
-
-        .header a {
-            float: left;
-            color: green;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-        }
-
-
-
-
-        .header a:hover {
-            background-color: #ddd;
-
-        }
-
-
-
-
-        @media screen and (max-width: 500px) {
-            .header a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-            .features {
-                margin: 4em auto;
-                padding: 1em;
-                position: relative;
-            }
-            .feature-title {
-                color: #333;
-                font-size: 12px;
-                font-weight: 700;
-                margin-bottom: 20px;
-                text-transform: uppercase;
-            }
-            .features img {
-                -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-                -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-                margin-bottom: 16px;
-            }
-
-
-        }
-
-
-    </style>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
+    .top {
+        top: 0;
+    }
 
+    .top {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    .padding-64 {
+        padding-top: 64px!important;
+        padding-bottom: 120px!important;
+    }
+    .theme-l1 {
+        color: #ffffff !important;
+        background-color: rgb(51, 51, 51) !important;
+    }
+
+    .theme {
+        color: rgba(22, 196, 150, 0.87) !important;
+        background-color: rgba(0, 0, 0, 0.99) !important;
+    }
+
+    .left-align {
+        text-align: left!important;
+    }
+    .large {
+        font-size: 18px!important;
+    }
+    .top {
+        top: 0;
+    }
+
+    .bar {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bar .button {
+        white-space: normal;
+    }
+
+    .bar .bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0;
+    }
+    .theme-l1 {
+        color: #fff !important;
+        background-color: #333333  !important;
+    }
+    a:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .right {
+        float: right!important;
+    }
+    .theme-l1 {
+        color: #fff !important;
+        background-color: #333333 !important;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 33.33333333333333%;
+    }
+    .col-8 {
+        width: 66.66666666666667%;
+    }
+
+</style>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black; ">
-    <div class="container-fluid" >
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/GNOME_Web_logo--2018.svg/1024px-GNOME_Web_logo--2018.svg.png" width="40" height="40" ALT="0"/>
-        <ul class="nav navbar-nav" style="padding-right: 100px">
-
-            <li class="active"><a href="index.html" style="background-color: black; color: white; font-size: 15px">Home</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 15px;  ">Topics
-                    <span class="caret"></span></a>
-                <ul class="dropdown-menu" style="background-color: white">
-                    <li><a href="history_of_internet.html">History of the Internet</a></li>
-                    <li><a href="Browsers.html">Browsers Wars</a></li>
-                    <li><a href="DOT_COM_BUBBLE.html">DOT COM BUBBLE</a></li>
-                    <li><a href="The_People.html">The People</a></li>
-                    <li><a href="The_internet_search.html">The Internet Search</a></li>
-                    <li><a href="DNS.html">IP Addresses and DNS</a> </li>
-                    <li><a href="Team.html">Members</a></li>
-                </ul>
-            </li>
-        </ul>
+<!-- Navbar -->
+<div class="-top">
+    <div class="bar theme top left-align large">
+        <a href="#" class="bar-item button theme-l1">The Invention of Internet</a>
+        <a href="about.html" class="bar-item button hide-small hover-white">Browser Wars</a>
+        <a href="#" class="bar-item button hide-small hover-white">Internet Search:ARPA</a>
+        <a href="#" class="bar-item button hide-small hover-white">Dot Com Bubble</a>
+        <a href="#" class="bar-item button hide-small hover-white">People</a>
+        <a href="#" class="bar-item button hide-small hide-medium w3-hover-white">HTTP and HTML</a>
+        <a href="python/pylint.html" class="bar-item button hide-small hide-medium w3-hover-white">Pylint</a>
+        <a href="python/oops.html" class="bar-item button hide-small hide-medium w3-hover-white">OOPS Concepts</a>
+        <a href="python/testing.html" class="bar-item button hide-small hide-medium w3-hover-white">Testing</a>
+        <a href="python/separation.html" class="bar-item button hide-small hide-medium w3-hover-white">Separation</a>
+        <a href="python/github.html" class="bar-item button hide-small hide-medium w3-hover-white">Github Repository</a>
     </div>
-</nav>
+</div>
 
-
-
-    <div  style="padding-left:30px">
-        <h1>The History of the  Internet</h1>
+<div class="padding-64 col-12">
+    <div class="third container col-8" style="float:right;">
+        <h1 class="text-teal">The Invention of Internet</h1>
+        <p>When we stream a YouTube video, our computer will send a message to the YouTube’s computer to give access to the file. Even though the streaming starts instantly, there’s a lot of process behind it. The message reaches the computer, which in turn searches for the required file of 1s and 0s. YouTube sends this file back to the local computer in pieces or packets with the ones and zeros regarded as the beginning of the video, and the ones and zeros continue to stream in even while we watch the video. It makes us wonder how we came up in a world where billions of machines are all connected by this bizarre framework, we call the Internet.</p>
         <p></p>
-
-        <main>
-            <div class="book-container main justify-content-center ">
-            </div>
-            <div id="middle" class="container features">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 ">
-                    <h3>Internet Invention</h3>
-                    <img  src="https://blog.paessler.com/hubfs/header/blog/history-of-the-internet-1.png" width="100" height="100" alt="0" style="border-radius: 50%">
-                    <p> <a href="history_of_internet.html">READ MORE</a></p>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h3 class="feature-title">BROWSERS WARS</h3>
-                    <img src="images/browsers.png" height="100" width="100" alt="0" style="border-radius: 50%"/>
-                    <p><a href="browsers.html">READ MORE</a></p>
-                </div>
-                <div class="col-lg-4 col-md-4 " >
-                    <h3 class="feature-title">DOT COM BUBBLE</h3>
-                    <img src="https://ideas.ted.com/wp-content/uploads/sites/3/2018/12/tedtalks_2000dotcombubble_02.jpg" width="100" height="100" alt="0" style="border-radius: 50%">
-                    <p><a href="DOT_COM_BUBBLE.html">READ MORE</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 ">
-                    <h3 class="feature-title">HISTORY OF DNS</h3>
-                    <img src="images/dns.gif" height="100" width="100" alt="0" style="border-radius: 50%"/>
-                    <p><a href="DNS.html">READ MORE</a> </p>
-                </div>
-                <div class="col-lg-4 col-md-4 ">
-                    <h3 class="feature-title">Historian Figures</h3>
-                    <img src="images/people.png" height="100" width="100" alt="0" style="border-radius: 50%"/>
-                    <P><a href="The_People.html">READ MORE</a> </P>
-                </div>
-                <div class="col-lg-4 col-md-4 ">
-                    <h3 class="feature-title">Internet Search</h3>
-                    <img src="images/search.jpeg" height="100" width="100" alt="0" style="border-radius: 50%"/>
-                    <p><a href="The_internet_search.html">READ MORE</a></p>
-                </div>
-
-            </div>
-            </div>
-        </main>
+        <p>In 1960, there was no Internet, but a team led by Richard Feynman discovered a way to solve complex problems in parallel. In 1969, the US Department of Defence established the Advanced Research Projects Agency, or ARPA. Packet switching was one of ARPAnet’s first significant innovations. It allowed engineers to solve issues that continue to influence everything we do online today.
+            The first program to bring this change was called World Wide Web created by Sir Tim Berners-Lee at CERN and released on Christmas Day, 1998. Within a year another browser, WWW had been released for Unix. A good candidate for popularizing the Internet would have to be marked. The recent one who wrote the mosaic was the first popular web browser for Windows.
+        </p>
     </div>
+    <div class="padding-64 right col-4" style="float:left" >
+        <img width="70%" src="https://geekboots.sfo2.cdn.digitaloceanspaces.com/post/history-of-internet-1565090780333.jpg">
+        <img width="70%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy07FcnsF4bISDTK3NzSC3TF0Cf1hh6ehpKQ&usqp=CAU">
+    </div>
+</div>
 
-        <footer>
-        <div class="footer" style=" text-align: center; margin-right: 20px;  font-size: 15px; color: white; background-color: black">
-            &copy; <a href="https://github.com/nk398/Project1"> 2021 Neha Kazi and Swathi Venkatesh Kumar</a> - <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fkumar-kazi.eastus.azurecontainer.io%2F">W3C</a>
-        </div>
+<!-- END MAIN -->
 
-
-    </footer>
 </body>
 </html>

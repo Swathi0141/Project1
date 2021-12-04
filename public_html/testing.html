@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AAA and External testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+<!-- Sidebar/menu -->
+<div class="-top">
+    <div class="bar theme top left-align large">
+        <a href="/internet-history/public_html/index.html" class="bar-item button theme-l1">Home</a>
+    </div>
+</div>
+<nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="container" style="margin-top:0px" id="showcase">
+        <h1 class="text-teal"><b>Testing</b></h1>
+    </div>
+    <div class="bar-block" style="float:left"  >
+        <img width="100%" src="../images/testing.png">
+        <p>AAA Testing</p>
+    </div>
+</nav>
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+
+    <!-- Services -->
+    <div class="container" id="services" style="margin-top:60px">
+
+        <p class="d-inline">
+        <ul class= "text-white">
+            <li>Why is Testing Important?
+                <ul>
+                    <li>How else would you know if your code works?</li>
+                    <li>Proper testing can detect any bugs and defects in the code</li>
+                    <li>It can also find security flaws</li>
+                    <li>It ensures the code does exactly what it is supposed to do before publishing</li>
+                    <li>Lastly, it will prove that there will not be any unexpected results</li>
+                </ul>
+            </li>
+            <li>What is AAA Testing?
+                <ul>
+                    <li>It stands for: Arrange, Act, Assert</li>
+                    <li>Arrange: code required to execute a specific test</li>
+                    <li>Act: invoke the method being tested</li>
+                    <li>Assert: check whether the expectations were met </li>
+                </ul>
+                Example: <br>
+                <code>def test_add():<br>&emsp;&emsp;&emsp;#arrange <br> &emsp;&emsp;&emsp;val1=1 <br> &emsp;&emsp;&emsp;val2=2 <br> &emsp;&emsp;&emsp;#act<br>&emsp;&emsp;&emsp;q=add(val1,val2)<br>&emsp;&emsp;&emsp;#assert<br>&emsp;&emsp;&emsp;q=3</code>
+            </li>
+        </ul>
+        </p>
+    </div>
+</div>
+</div>
+<div class="col-4">
+    <div class="card bg-dark" style="margin-top: 100px; margin-bottom: 75px;">
+        <div class="card-body">
+            <p class="d-inline">
+            <ul class= "text-white">
+                <li>External Testing
+                    <ul>
+                        <li>For external testing, you need pandas installed</li>
+                        <li>The idea is that you will need to call the file </li>
+                        <li>You can use any sort of file or database</li>
+                        <li>Examples are python files, JSON, CSV, text, and SQL</li>
+                        <li>This means, how you load the files depends on your input</li>
+                        <li>How you preprocess the data in those files also depends on your input</li>
+                        <li>For example, if you want to use pandas and CSV files, look at the picture on the left</li>
+                        <li>This is one way of reading a CSV file into a test and creating assert statements</li>
+                        <li>The proper way is to create your own file handling, but it is not needed if it is only for testing </li>
+                        <li>The basics steps to use external data in testing are:
+                            <ul>
+                                <li>Read the file</li>
+                                <li>Find the result values</li>
+                                <li>Do the test using the rest of the values</li>
+                                <li>Finally, assert the multiple values equals the result value</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </p>
+    </div>
+    </div>
+
+    <!-- Header -->
+</div>
+</body>
+</html>

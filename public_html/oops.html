@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> object oriented programming </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+<!-- Sidebar/menu -->
+<div class="-top">
+    <div class="bar theme top left-align large">
+        <a href="/internet-history/public_html/index.html" class="bar-item button theme-l1">Home</a>
+    </div>
+</div>
+<nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="container" style="margin-top:0px" id="showcase">
+        <h1 class="text-teal"><b>OOPS </b></h1>
+    </div>
+    <div class="bar-block" style="float:left"  >
+        <img width="100%" src="../images/oops.png">
+        <p>Example of Encapsulation and Inheritence</p>
+
+    </div>
+</nav>
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+
+    <!-- Services -->
+    <div class="container" id="services" style="margin-top:60px">
+
+        <p class="d-inline">
+        <ul class= "text-white">
+            <li>Main Principles of Object Oriented Programming
+                <ul>
+                    <li>Abstraction
+                        <ul>
+                            <li>Abstract classes are blueprints for other classes</li>
+                            <li>This is demonstated by the Calculation class</li>
+                            <li>All this class does is takes in a tuple, converts it to a list of floats, and saves it as an attribute</li>
+                            <li>By itself, this class does nothing because there is no implementation in any methods</li>
+                            <li>And this is the main criteria of an abstract class</li>
+                        </ul>
+                    </li>
+                    <li>Polymorphism
+                        <ul>
+                            <li>This is basically using the same function but with different types of data</li>
+                            <li>An example of this in python is <code>len()</code>, because you can use that function on most data types such as int, list, and dict</li>
+                            <li>This is showcased with the <code>get_result()</code> function in the addition, subtraction, division, and multiplication classes</li>
+                            <li>As long as you call <code>get_result()</code>, you will always get the result no matter what is in <code>Calculator.history</code></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="col-4">
+    <div class="card bg-dark" style="margin-top: 100px; margin-bottom: 75px;">
+        <div class="card-body">
+            <p class="d-inline">
+            <ul class= "text-white">
+                <li>Main Principles of Object Oriented Programming
+                    <ul>
+                        <li>Encapsulation
+                            <ul>
+                                <li>This is the technique of masking functions or attributes by having them only be called through other functions</li>
+                                <li>This is showcased in <code>add_numbers()</code>, <code>subtract_numbers()</code>, <code>multiply_numbers()</code>, and <code>divide_numbers()</code> in the Calculator class </li>
+                                <li>All four of those methods call <code>add_calculation()</code> in the Calculator class and <code>create()</code> in the Calculation class</li>
+                                <li>By calling <code>create()</code>, the above four methods also receive access to the <code>get_result()</code> method</li>
+                                <li>Another way of looking at this is: <br> <code>get_result()</code> is in <code>create()</code> which is in <code>add_numbers()</code> along with <code>add_calculation()</code> </li>
+                                <li>And these nested functions is encapsulation</li>
+                            </ul>
+                        </li>
+                        <li>Inheritence
+                            <ul>
+                                <li>Inheritence is the functions and attributes that get imported and utilized in other classes</li>
+                                <li>The addition, subtraction, division, and multiplication classes all import the calculation class</li>
+                                <li>This means they have access to the functions and attributes in the calculation class</li>
+                                <li>The <code>create()</code> is inherited because it is not defined in the four operation classes</li>
+                                <li>Also, <code>self.values</code> is not defined in the operation classes, which means it was inherited from the calcuation class</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </p>
+    </div>
+    </div>
+
+    <!-- Header -->
+</div>
+</body>
+</html>

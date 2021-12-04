@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pylint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+<!-- Sidebar/menu -->
+<div class="-top">
+    <div class="bar theme top left-align large">
+        <a href="/internet-history/public_html/index.html" class="bar-item button theme-l1">Home</a>
+    </div>
+</div>
+<nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="container" style="margin-top:0px" id="showcase">
+        <h1 class="text-teal"><b>PYLINT </b></h1>
+    </div>
+    <div class="bar-block" style="float:left"  >
+        <img width="100%" src="../images/pylint.png">
+        <p>Pylint executing on calculator</p>
+    </div>
+</nav>
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+
+    <!-- Services -->
+    <div class="container" id="services" style="margin-top:60px">
+
+        <p class="d-inline">
+        <ul class= "text-white">
+            <li>Installing Pylint
+                <ul>
+                    <li>Go to where you can call python from (I.E command prompt or terminal)</li>
+                    <li>You can check this by typing <code>python3</code></li>
+                    <li>But wherever you installed python, pip should be installed</li>
+                    <li>To call pip, you run <code>python3 -m pip</code></li>
+                    <li>To get Pylint, you run <code>python3 -m pip install pylint</code></li>
+                    <li>If somehow you do not have pip, follow this link: <a href=https://pip.pypa.io/en/stable/installation>PIP Install</a></li>
+                    <li>Then simply follow the above steps!</li>
+                </ul>
+            </li>
+            <li>Running Pylint
+                <ul>
+                    <li>In your shell (command prompt or terminal), you go to the directory where your code is</li>
+                    <li>Run <code>pylint</code> file path or file name</li>
+                    <li>If you have four python scripts in a folder called <q>hero</q>, you would run <code>pylint hero/</code></li>
+                    <li>Or if you wanted to check one of those scripts called class.py, you would run <code>pylint hero/class.py</code></li>
+                    <li>And that's it!</li>
+                    <li>Pylint will display what is wrong and where, so you will just have to follow the results</li>
+                </ul>
+                <ul>
+                    <li>A useful line to add to your code for pylint is this: <code># pylint: disable=too-few-public-methods</code></li>
+                    <li>That line allows you to have one function in a file and not have to deal with pylint throwing an error</li>
+                    <li>If you get weird import errors, add this line: <code># pylint: disable=import-error</code> </li>
+                    <li>Otherwise, if you know the pylint errors are wrong, just use the Internet to find the pylint error supression lines</li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+        <p class="d-inline">
+        <ul class= "text-white">
+            <li>OOP Terms and Definitons
+                <ul>
+                    <li>Factory - an object for creating other objects: a function or method that returns objects of a varying prototype or class from some method call</li>
+                    <li>Instantiation - creation of an object</li>
+                    <li>Object - an instantiation of a class. You can say an object is a variable with the datatype being a class</li>
+                    <li>Class - blueprint for an object: it defines the methods and attributes of an object</li>
+                    <li>Namespace - collection of currently defined symbolic names along with information about the object that each name references <br> There are three types:
+                        <ul>
+                            <li>Built-In: these are in the default functions and variables that exists in any python setting such as <code>print()</code> and <code>len()</code></li>
+                            <li>Global: these are functions and variables that solely exist in a single python file, accessible throughout the whole script. These types of variables would be declared at the top of the file, directly after any <code>import</code> statements. The functions associated with this would be static and class</li>
+                            <li>Local: these are primarily variables created in functions and are only accessible in those functions. Otherwise some functions could be in the local space if they are non-static and non-class</li>
+                        </ul>
+                    </li>
+                    <li>Constructor - prepares a new object for use, often accepting arguments or parameters used to set attributes or member variables</li>
+                    <li>Fixture - only in tests; ensures that there is a well known and fixed environment in which tests are run so that results are repeatable</li>
+                    <li>Unit Test - testing method by which individual units of source code are tested to determine whether they are fit for use</li>
+                    <li>Static Method - functions that do not rely on an object they are attached to</li>
+                    <li>Class Method - functions that can be called with a class or with an object. They are bound to a class rather than an object and takes itself, cls as the first parameter. Lastly, these functions can access or modify the class state.</li>
+                    <li>Facade - masks actual functions into one line functions to hide what the code actual does from the user</li>
+                    <li>Design Pattern Used - general repeatable solution to a commonly occurring problem in software design</li>
+                    <li>Method - functions associated with the objects of the class they belong to</li>
+                    <li>Property - provides an interface to instance attributes. It provides a getter that retrieves a value in a class and a setter that sets a value in a class</li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <!-- Header -->
+</div>
+</body>
+</html>
